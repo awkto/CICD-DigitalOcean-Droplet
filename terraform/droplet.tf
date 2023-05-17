@@ -1,3 +1,7 @@
+provider "digitalocean" {
+  token = var.digitalocean_token
+}
+
 # Create Droplet
 resource "digitalocean_droplet" "droplet-github-actions" {
   image  = "ubuntu-22-04-x64"  # Image slug for the desired OS
